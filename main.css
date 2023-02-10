@@ -1,0 +1,101 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+.body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    background-color: var(--background-headings-buttons);
+}
+
+.container {
+    position: relative;
+    border-radius: 10px;
+    text-align: left;
+    margin: 100px 300px 100px;
+   
+    place-content: center;
+    display: grid;
+    color: var(--paragraphs);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+img{
+padding-top: 30px;
+
+}
+h1{
+    color: var(--background-headings-buttons);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+p{  text-align: left;
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+.box1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var(--Bright-orange);
+    height: 500px;
+}
+.box1 button{
+    color: var(--Bright-orange);
+}
+.box2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var(--Darkcyan);
+    height: 500px;
+}
+.box2 button{
+    color: var(--Darkcyan);
+}
+.box3 {
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var(--Verydarkcyan);
+    height: 500px;
+}
+.box3 button{
+    color: var(--Verydarkcyan);
+}
+
+button {
+    border-color:var(--background-headings-buttons) ;
+    border-radius: 25%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+background-color: transparent;
+color: var(--background-headings-buttons);
+}
+@media (max-width:400px){
+    .body{
+        height: 800px;
+    }
+    .container {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    }
+    p{
+        padding-bottom:20px;
+    }
+    button {
+        margin-bottom:30px;
+    }
+}
